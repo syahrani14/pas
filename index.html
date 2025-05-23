@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Data Sekolah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Website Data Sekolah</h2>
+    <nav>
+      <a href="index.html">Tambah Data</a>
+      <a href="lihat.php">Lihat Data</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h3>Tambah Data Siswa</h3>
+    <form action="register.php" method="post">
+  <label>Nama</label>
+  <input type="text" name="nama" placeholder="Masukkan Nama" required>
+
+  <label>NISN</label>
+  <input type="text" name="nisn" placeholder="Masukkan NISN" required>
+
+  <label>Kelas</label>
+  <input type="text" name="kelas" placeholder="Masukkan Kelas" required>
+
+  <label>Jenis Kelamin</label>
+  <select name="jenis_kelamin" required>
+    <option value="Laki-Laki">Laki-Laki</option>
+    <option value="Perempuan">Perempuan</option>
+  </select>
+
+  <label>Jurusan</label>
+  <input type="text" name="jurusan" placeholder="Masukkan Jurusan" required>
+
+  <label>Sebagai</label>
+  <select name="sebagai" required>
+    <option value="Siswa">Siswa</option>
+    <option value="Guru">Guru</option>
+  </select>
+
+  <button type="submit">Simpan</button>
+</form>
+  </div>
+</body>
+</html>
